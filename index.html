@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="canvas__linea">
+        <!-- etiqueta de dibujo -->
+       <!-- Se dibuja atravez de js -->
+       <h1> 
+           Dibujo en canvas
+       </h1>
+       <p> 
+           Cuantas líneas quieres :
+           <input id="texto__lineas" type="text" placeholder="# de líneas" class="search">
+           <input id="boton__click" type="button" value="crea" class="button">
+       </p>
+       <canvas id="dibujo" height= 300px width= 300px>
+       </canvas>
+       <h2>¡Asi queda tu dibujo!</h2>
+    </section>
+
+    <section class="canvas__letters">
+        <h1>
+            Dibujo por teclado
+        </h1>
+        <p>
+            Mueve las flechas del teclado para dibujar
+        </p>
+        <p class="subtitle">
+            Si estás en móvil, desliza tu dedo sobre el lienzo.
+        </p>
+        <canvas id="dibujar" height= 300px width= 300px></canvas>
+        <h2>¡Intentalo tu puedes!</h2>
+    </section>
+
+    <script src="./canvas.js" language="javascript" type="text/javascript"></script>
+    <script src="./eventos.js" language="javascript" type="text/javascript"></script>
+</body>
+</html>
